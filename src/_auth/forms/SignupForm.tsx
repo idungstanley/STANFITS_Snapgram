@@ -69,13 +69,21 @@ const SignupForm = () => {
   return (
     <Form {...form}>
       <div className="flex-col sm:w-420 flex-center">
-        <img src="/assets/images/logo.svg" alt="logo" />
+        <div className="flex items-center justify-between gap-2">
+          <img
+            src="/assets/images/stanfits.svg"
+            alt="logo"
+            width={40}
+            height={40}
+          />
+          <h3>STANFITS SNAP</h3>
+        </div>
 
-        <h2 className="pt-5 h3-bold md:h2-bold sm:pt-12">
+        <h2 className="pt-3 h3-bold md:h2-bold sm:pt-5">
           Create a new account
         </h2>
         <p className="mt-2 text-light-3 small-medium md:base-regular">
-          To use snapgram, Please enter your details
+          To use STANFITS SNAP, Please enter your details
         </p>
 
         <form
