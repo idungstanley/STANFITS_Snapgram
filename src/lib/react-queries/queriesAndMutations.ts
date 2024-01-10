@@ -56,7 +56,8 @@ export const useSignOutAccount = () => {
 // ============================================================
 
 export const useGetPosts = () => {
-  return useInfiniteQuery({
+    return useInfiniteQuery({
+    initialPageParam: 0,
     queryKey: [QUERY_KEYS.GET_INFINITE_POSTS],
     queryFn: getInfinitePosts as any,
     getNextPageParam: (lastPage: any) => {
